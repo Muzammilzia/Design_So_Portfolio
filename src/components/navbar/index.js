@@ -6,6 +6,8 @@ import { RiArrowDropDownLine } from "react-icons/ri"
 import useWindowDimensions from '@/hooks/useWindowDimensions';
 import Link from 'next/link';
 import useCurrentScrolledHeight from '@/hooks/useCurrentScrolledHeight';
+import logo1 from '../../assetts/nav-logo-1.png'
+import Image from 'next/image';
 
 export const Navbar = () => {
     const [expandService, setExpandService] = useState(false);
@@ -17,7 +19,7 @@ export const Navbar = () => {
     <nav className={styles.nav} style={scrolledHeight > 300 ? {position: "fixed", top: "0", background: "white", color: "black", boxShadow: "0px 5px 20px 0px rgba(0,0,0,0.15)"} : {}}>
         <Link href="/">
             <span></span>
-            <span>LOGO</span>
+            <span><Image src={logo1}/></span>
         </Link>
         {width <= 768 ? <Link onClick={() => setShowNav(prevStat => !prevStat)} className="nav-item" href="#">
                     <GiHamburgerMenu />

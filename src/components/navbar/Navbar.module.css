@@ -33,6 +33,15 @@ body{
     transition: all 0.5s ease;
 }
 
+.nav > a > span:last-of-type{
+    display: inline-block;
+    width: 250px;
+}
+.nav > a > span > img{
+    width: 100%;
+    height: auto;
+}
+
 .nav > ul{
     display: flex;
     /* width: 100%; */
@@ -92,10 +101,20 @@ body{
 }
 
 
+@media only screen and (max-width: 1100px){
+    .nav > a > span:last-of-type{
+        display: inline-block;
+        width: 200px;
+    }
+    .nav{
+        padding: 0 5%;
+    }
+}
 @media only screen and (max-width: 1020px){
     .nav > ul li{
         margin: 0 12px;
     }    
+
 }
 @media only screen and (max-width: 768px){
     .nav{
@@ -132,7 +151,7 @@ body{
     }
     .show li{
         border-bottom: 1px solid #507C92;
-        width: 100%;
+        width: 90%;
         padding: 10px;
     }
     .hide{
@@ -141,4 +160,5 @@ body{
     .hide li{
         display: none;
     }
+
 }

@@ -1,6 +1,8 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 import styles from "./Footer.module.css"
+import logo1 from '../../assetts/nav-logo-1.png'
 
 export const Footer = () => {
   return (
@@ -10,7 +12,7 @@ export const Footer = () => {
           <div >
             <h1>About us</h1>
             <p>We believe in the motto of “Think Plan and Execute”, which reflects upon our vision to disrupt the dynamics of the international digital industry.</p>
-            <span>LOGO</span>
+            <span style={{width: "200px", display: "inline-block", margin: "16px 0 0 -16px"}}><Image src={logo1} style={{width: "100%", height: "auto"}}/></span>
           </div>
           <div>
             <h1>Important Links</h1>
