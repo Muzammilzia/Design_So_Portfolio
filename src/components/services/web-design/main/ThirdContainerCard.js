@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-import styles from './ThirdContainerCard.module.css'
+import styles from './thirdContainerCard.module.css'
 
 export const ThirdContainerCard = ({image, title, body}) => {
   return (
