@@ -8,6 +8,7 @@ import Link from 'next/link';
 import useCurrentScrolledHeight from '@/hooks/useCurrentScrolledHeight';
 
 export const Navbar = () => {
+    const [expandService, setExpandService] = useState(false);
     const { scrolledHeight } = useCurrentScrolledHeight();
     const {height,  width} = useWindowDimensions();
     const [showNav, setShowNav] = useState(false);
@@ -37,9 +38,9 @@ export const Navbar = () => {
                     About
                 </Link>
             </li>
-            <li className={styles.service}>
+            <li className={styles.service} onClick={()=>setExpandService(prev => !prev)} style={expandService && width <= 768 ? {height: "228px"} : {}}>
                 <Link href="#">
-                    <span>services</span>
+                    <span>Services</span>
                     <RiArrowDropDownLine size={40}/>
                 </Link>
                 <ul className={styles.serviceDropDown}>

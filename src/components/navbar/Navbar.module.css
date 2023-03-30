@@ -33,51 +33,67 @@ body{
     transition: all 0.5s ease;
 }
 
-.nav ul{
+.nav > ul{
     display: flex;
     /* width: 100%; */
     justify-content: flex-end ;
     align-items: center;
     transition: 1s ease;
 }
-.nav ul li{
+.nav > ul li{
     list-style: none;
     font-size: 1.3rem;
     margin: 0 24px;
 }
 
-.service{
-    position: relative;
+@media only screen and (min-width: 768px){
+    .service{
+        position: relative;
+    }
+    .service>a{
+        display: flex;
+        align-items: center;
+    }
+    .service:hover .serviceDropDown{
+        max-height: 300px;
+    }
+    .serviceDropDown{
+        position: absolute;
+        background-color: white;
+        left: -50%;
+        color:  black;
+        width: 200%;
+        /* padding: 8px 0; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+        max-height: 0;
+        overflow: hidden;
+        box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.10);
+        transition: all 1s ease;
+    }
+    .serviceDropDown li{
+        text-align: left;
+        margin: 10px 24px 10px 24px !important;
+    }
 }
-.service>a{
-    display: flex;
-    align-items: center;
-}
-.service:hover .serviceDropDown{
-    max-height: 300px;
-}
-.serviceDropDown{
-    position: absolute;
-    background-color: white;
-    left: -50%;
-    color:  black;
-    width: 200%;
-    /* padding: 8px 0; */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start !important;
-    max-height: 0;
-    overflow: hidden;
-    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.10);
-    transition: all 1s ease;
-}
-.serviceDropDown li{
-    text-align: left;
-    margin: 10px 24px 10px 24px !important;
+@media only screen and (max-width: 768px){
+    .service{
+        height: 60px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s ease;
+    }
+    .service > a{
+        display: flex;
+        align-items: center;
+    }
 }
 
+
 @media only screen and (max-width: 1020px){
-    .nav ul li{
+    .nav > ul li{
         margin: 0 12px;
     }    
 }
@@ -92,7 +108,7 @@ body{
         font-size: 1.4rem;
         position: absolute;
     }
-    .nav ul{
+    .nav > ul{
         display: flex;
         position: absolute;
         top: 0;
@@ -109,7 +125,7 @@ body{
     .show{
         width: 70%;
     }
-    .show li:first-of-type{
+    .show > li:first-of-type{
         padding: 20px 30px;
         display: flex;
         justify-content: flex-end;
