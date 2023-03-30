@@ -16,7 +16,7 @@ import image from '../../../../assetts/web-development-process-img.png'
 import image2 from '../../../../assetts/web-development-technology.png'
 
 import { Card } from './Card';
-import { ThirdContainerCard } from './thirdContainerCard';
+import { ThirdContainerCard } from './ThirdContainerCard';
 
 export const WebDesignMain = () => {
   return (

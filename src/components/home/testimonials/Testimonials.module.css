@@ -20,8 +20,8 @@
     margin-top: 16px;
     height: 3px;
     background-color: #F11D66;
-    position: absolute;
-    left: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .flexedContainer{

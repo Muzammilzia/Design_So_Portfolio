@@ -65,9 +65,9 @@ export const Testimonials = () => {
                 </div>
             </div>
         </div>
-        <div className={styles.bottomContainer}>
+        {/* <div className={styles.bottomContainer}>
             <h1>Our client testimonials says it all</h1>
-            {/* <Swiper
+            <Swiper
                 spaceBetween={50}
                 slidesPerView={1}
                 onSlideChange={() => console.log('slide change')}
@@ -77,8 +77,8 @@ export const Testimonials = () => {
                 <SwiperSlide>Slide 2</SwiperSlide>
                 <SwiperSlide>Slide 3</SwiperSlide>
                 <SwiperSlide>Slide 4</SwiperSlide>
-            </Swiper> */}
-        </div>
+            </Swiper>
+        </div> */}
     </div>
   )
 }
