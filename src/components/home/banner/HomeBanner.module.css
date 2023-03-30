@@ -1,0 +1,71 @@
+.parentContainer{
+    min-height: 127vh;
+    min-width: 100%;
+    background-image: url("../../../assetts/home-banner-background.jpg");
+    background-repeat: no-repeat;
+    background-position: 40% 0%;
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    color: white;
+    padding-right: 10%;
+    /* padding-bottom: 40vh; */
+}
+.container h1{
+    line-height: 2.7rem;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.container p{
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+@media only screen and (max-width: 1140px){
+    .container{
+        padding-left: 5%;
+        padding-right: 0;
+    }
+}
+.container div{
+    /* flex: 1 1 0px; */
+}
+.rocketBackground{
+    background-image: url("../../../assetts/home-banner-rocket.png");
+    height: 550px;
+    min-width: 550px;
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (max-width: 990px){
+    .rocketBackground{
+        min-width: 300px;
+        background-size: cover;
+        background-position: 0% 50%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+        /* padding-top: 8rem; */
+        text-align: center;
+        padding: 8rem 5rem 5%;
+    }
+    .container h1{
+        line-height: 2.7rem;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .container p{
+        margin-bottom: 25px;
+    }
+    .rocketBackground{
+        min-width: 550px;
+        background-size: cover;
+        background-position: 50%;
+    }
+}

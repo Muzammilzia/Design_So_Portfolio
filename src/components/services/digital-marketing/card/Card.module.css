@@ -1,0 +1,15 @@
+.container{
+    padding: 16px;
+    margin: 24px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.10);
+}
+
+.container > div:first-of-type{
+    margin-right: 24px;
+}
+.container > div:last-of-type > p{
+    
+}

@@ -1,0 +1,75 @@
+.container{
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url("../../../assetts/home-testimonial-banner.png");
+    padding: 0 10%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+
+.topContainer > h1, .bottomContainer > h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.topContainer > h1::after, .bottomContainer > h1::after{
+    content: ' ';
+    width: 100px;
+    display: block;
+    margin-top: 16px;
+    height: 3px;
+    background-color: #F11D66;
+    position: absolute;
+    left: 50%;
+}
+
+.flexedContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+.flexedContainer > div{
+    width: 33%;
+    display: flex;
+}
+.flexedContainer > div > div{
+    padding-left: 12px;
+    padding-top: 14px;
+}
+.flexedContainer > div > div > h3{
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+.flexedContainer > div > div > p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 1140px){
+    .container{
+        padding: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 1030px){
+    .container{
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 0 2% 60px 2%; 
+    }
+    .flexedContainer{
+        flex-direction: column;
+    }
+    .flexedContainer > div{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,161 @@
+.container{
+    min-width: 100%;
+    min-height: 100vh;
+    /* padding: 0 10%; */
+}
+.innerTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+}
+.innerTop > div:first-of-type{
+    width: 40%;
+}
+.innerTop > div:last-of-type{
+    width: 60%;
+}
+.innerTop > div:last-of-type > h1{
+    color: #1E1666;
+    line-height: 2.6rem;
+}
+.innerTop > div:last-of-type > h1::after{
+    content: ' ';
+    width: 60px;
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: 3px;
+    background-color: #F11D66;
+}
+.innerTop > div:last-of-type > p{
+    margin-bottom: 24px;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+}
+.innerTop > div:last-of-type > p:first-of-type{
+    font-weight: 500;
+}
+.innerTop > div > img{
+    width: 100%;
+    height: auto;
+}
+
+.middleTop{
+    padding-bottom: 0 10% 60px 10%;
+}
+.middleTop > h1{
+    line-height: 2.6rem;
+    text-align: center;
+    color: #1E1666;
+}
+.middleTop > h1::after{
+    content: ' ';
+    width: 60px;
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: #F11D66;
+}
+.middleTop > p{
+    padding: 0 15%;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 16px;
+    line-height: 2rem;
+    color: #6A7C92;
+}
+
+.middleBottom{
+    background-image: url("../../../../assetts/logo-design-service-main-background.png");
+    background-size: cover;
+    background-position: center;
+    padding: 440px 10% 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -360px;
+    flex-direction: row-reverse;
+}
+.middleBottom > div > img{
+    width: 100%;
+    height: auto;
+}
+.middleBottom > div:first-of-type{
+    width: 40%;
+}
+.middleBottom > div:last-of-type{
+    width: 60%;
+    padding: 24px 56px 24px 24px;
+}
+.middleBottom > div:last-of-type > h1{
+    color: #1E1666;
+}
+.middleBottom > div:last-of-type > h1::after{
+    content: ' ';
+    width: 60px;
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: 3px;
+    background-color: #F11D66;
+}
+.middleBottom > div:last-of-type > p{
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    line-height: 2rem;
+    color: #6A7C92;
+}
+
+@media only screen and (min-width: 1130px){
+    .innerTop > div:last-of-type{
+        padding: 0 80px;
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 1020px){
+    .middleBottom{
+        padding: 440px 5% 0 5%;
+    }
+    .innerTop{
+        flex-direction: column;
+        padding: 80px 5%;
+    }
+    .innerTop > div:first-of-type{
+        width: 60%;
+    }
+    .innerTop > div:last-of-type{
+        width: 100%;
+    }
+    .middleTop{
+        padding: 0 5%;
+    }
+    .middleTop > p{
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 768px){
+    .middleBottom{
+        flex-direction: column;
+        padding: 440px 2% 0 2%;
+    }
+    .middleBottom > div:first-of-type, .middleBottom > div:last-of-type{
+        width: 100%;
+    }
+    .innerTop{
+        padding: 80px 2%;
+    }
+    .middleTop{
+        padding: 0 2%;
+    }
+    .innerTop > div:first-of-type{
+        width: 60%;
+    }
+    .innerTop > div:last-of-type{
+        width: 100%;
+    }
+}

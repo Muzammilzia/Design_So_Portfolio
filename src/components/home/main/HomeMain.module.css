@@ -1,0 +1,129 @@
+.parentContainer{
+    min-width: 100%;
+    min-height: 200vh;
+    /* background-color: black; */
+    /* padding: 0 10%; */
+}
+
+.topContainer{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10%;
+}
+.topContainer > div{
+    min-width: 50%;
+}
+
+.topContainerLeft > h1{
+    font-size: 2rem;
+}
+.topContainerLeft > h1::after{
+    content: ' ';
+    width: 100px;
+    display: block;
+    margin-top: 16px;
+    height: 3px;
+    background-color: #F11D66;
+}
+.topContainerLeft > p{
+    padding: 25px 25px 25px 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+.topContainerLeft > a{
+    color: #F11D66;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.topContainerRight{
+    display: flex;
+    flex-wrap: wrap;
+}
+.topContainerRight > div{
+    width: 50%;
+}
+.topContainerRight > div > h3{
+    font-size: 1.6rem;
+}
+.topContainerRight > div > p{
+    padding: 16px 16px 16px 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.middleContainer, .bottomContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+.bottomContainer{
+    flex-direction: row-reverse;
+}
+.middleContainer > div,.bottomContainer > div{
+    width: 50%;
+}
+.middleContainer > div > img, .bottomContainer > div > img{
+    max-width: 100%;
+    height: auto;
+}
+.middleContainer > div:last-of-type, .bottomContainer > div:last-of-type{
+    padding-left: 20px;
+}
+.middleContainer > div > h1, .bottomContainer > div > h1{
+    font-size: 2rem;
+}
+.middleContainer > div > h1::after, .bottomContainer > div > h1::after{
+    content: ' ';
+    width: 100px;
+    display: block;
+    margin-top: 16px;
+    height: 3px;
+    background-color: #F11D66;
+}
+.middleContainer > div  > p, .bottomContainer > div  > p{
+    padding: 25px 25px 25px 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+
+@media only screen and (max-width: 1140px){
+    .topContainer, .middleContainer, .bottomContainer{
+        padding: 0 5%;
+    }
+}
+@media only screen and (max-width: 1030px){
+    .topContainer{
+        flex-direction: column;
+        padding: 0 2%;
+    }
+    .middleContainer, .bottomContainer{
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .topContainer, .middleContainer, .bottomContainer{
+        flex-direction: column;
+        padding: 0 2%;
+    }
+    .topContainerRight{
+        flex-direction: column;
+    }
+    .topContainerRight > div{
+        width: 100%;
+    }
+    .middleContainer > div, .bottomContainer > div {
+        width: 100%;
+        padding-top: 16px;
+    }
+    .middleContainer > div:last-of-type, .bottomContainer > div:last-of-type {
+        padding-left: 0;
+    }
+}

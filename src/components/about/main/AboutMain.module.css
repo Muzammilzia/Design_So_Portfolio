@@ -1,0 +1,199 @@
+.topContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 10%;
+}
+.topContainer > div{
+    width: 60%;
+}
+.topContainer > div > img{
+    max-width: 100%;
+    height: auto;
+}
+.topContainer > div:last-of-type{
+    /* padding-left: 120px; */
+    width: 40%;
+}
+.topContainer > div > h1{
+    font-size: 2rem;
+}
+.topContainer > div > h1::after{
+    content: ' ';
+    width: 100px;
+    display: block;
+    margin-top: 16px;
+    height: 3px;
+    background-color: #F11D66;
+}
+.topContainer > div  > p{
+    padding: 25px 25px 25px 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.bottomContainer{
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url("../../../assetts//about-main-bottom-background.png");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bottomContainer > div:first-of-type{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 5% 0 10%;
+}
+.bottomContainer > div:first-of-type > div{
+    padding: 0 14px;
+    width: 31%;
+}
+.leftContainer > h1::after{
+    content: ' ';
+    width: 50px;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    height: 3px;
+    background-color: #F11D66;
+}
+.leftContainer > div > h3{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.leftContainer > div > h3 > span{
+    padding-left: 16px;
+}
+.leftContainer > div > p{
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 14px;
+}
+.card{
+    background-color: white;
+    /* margin: 18px; */
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    transition: 0.3s ease;
+    /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+}
+.card:hover{
+    /* transform: scale(1.1); */
+    transform: translateY(-20px);
+}
+.card > img{
+    width: 80%;
+    height: auto;
+}
+.card p {
+    line-height: 1.6rem;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.bottomContainer > div:last-of-type{
+    text-align: center;
+    padding: 100px 10%;
+}
+.bottomContainer > div:last-of-type > h1::after{
+    content: ' ';
+    width: 50px;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 48%;
+    height: 3px;
+    background-color: #F11D66;
+}
+.bottomContainer > div:last-of-type > p{
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    padding: 0 250px;
+}
+
+@media only screen and (max-width: 1285px){
+    .bottomContainer > div:last-of-type > p{
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+        padding: 0 150px;
+    }
+}
+@media only screen and (max-width: 1140px){
+    .bottomContainer > div:last-of-type{
+        padding: 90px 5%;
+    }
+    .bottomContainer > div:first-of-type{
+        padding: 0 2% 0 5%;
+    }
+    .topContainer{
+        padding: 90px 5%;
+    }
+}
+@media only screen and (max-width: 1030px){
+    .bottomContainer > div:first-of-type > div{
+        width: 50%;
+    }
+    .leftContainer{
+        width: 100% !important;
+    }
+    .topContainer{
+        padding: 90px 2%;
+    }
+    .topContainer > div{
+        width: 50%;
+    }
+    .bottomContainer > div:last-of-type > p{
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+        padding: 0 80px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .bottomContainer > div:first-of-type{
+        padding: 0 2%;
+    }
+    .bottomContainer > div:last-of-type{
+        padding: 80px 2%;
+    }
+    .topContainer{
+        flex-direction: column;
+        padding: 90px 2%;
+    }
+    .topContainer > div{
+        width: 100%;
+        padding-top: 16px;
+    }
+    .topContainer > div:last-of-type{
+        width: 100%;
+        padding-left: 0;
+    }
+    .bottomContainer > div:first-of-type{
+        flex-direction: column;
+    }
+    .bottomContainer > div:first-of-type > div{
+        width: 100%;
+    }
+    .card > img{
+        width: 35%;
+        height: auto;
+        min-height: 120px;
+        min-width: 140px;
+    }
+    .bottomContainer > div:last-of-type > h1::after{
+        margin-left: 45%;
+    }
+    .bottomContainer > div:last-of-type > p{
+        padding: 0;
+    }
+}

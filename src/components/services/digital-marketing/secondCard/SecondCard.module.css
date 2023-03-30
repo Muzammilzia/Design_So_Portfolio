@@ -1,0 +1,27 @@
+.container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 8px;
+}
+/* .container > div:first-of-type > img{
+    width: 120px;
+    height: auto;
+} */
+.container > div:first-of-type{
+    /* width: 40%; */
+    padding-right: 24px;
+}
+
+@media only screen and (max-width: 1020px){
+    .container{
+        width: 100%;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+}

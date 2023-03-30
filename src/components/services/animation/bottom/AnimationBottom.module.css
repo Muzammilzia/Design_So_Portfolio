@@ -1,0 +1,51 @@
+.container{
+    min-width: 100%;
+    padding: 40px 10%;
+}
+.container h1, .container h2{
+    color: #1E1666;
+}
+.container h1::after{
+    content: ' ';
+    width: 60px;
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: #F11D66;
+}
+.container p{
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    line-height: 2rem;
+    color: #6A7C92;
+}
+
+.container > div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container > div > div{
+    width: 25%;
+}
+
+@media only screen and (max-width: 1020px){
+    .container{
+        padding: 40px 5%;
+    }
+    .container > div > div{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 40px 2%;
+    }
+    .container > div > div{
+        width: 100%;
+    }
+}

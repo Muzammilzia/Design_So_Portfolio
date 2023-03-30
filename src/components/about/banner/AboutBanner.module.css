@@ -1,0 +1,44 @@
+.container{
+    background-image: url("../../../assetts/about-banner-background.jpg");
+    background-repeat: no-repeat;
+    background-position: 40% 0%;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    color: white;
+    padding-right: 10%;
+}
+.container > div{
+    width: 50%;
+}
+.container > div:last-of-type > img{
+    width: 100%;
+    height: auto;
+}
+
+.container >div:first-of-type > h1{
+    font-size: 2rem;
+    margin-bottom: 14px;
+}
+.container >div:first-of-type > p{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-bottom: 14px;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 170px 5% 0 5%;
+        min-height: 120vh;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .container > div{
+        width: 100%;
+    }
+}

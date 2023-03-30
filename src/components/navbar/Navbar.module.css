@@ -1,0 +1,128 @@
+/* $myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 16px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body{
+    font-family: $myFont;
+    font-size: $myFontSize;
+} */
+.nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav{
+    position: absolute;
+    color: white;
+    width: 100%;
+    position: absolute;
+    height: 6rem;
+    /* // border: 3px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    font-size: 1.2rem;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.nav ul{
+    display: flex;
+    /* width: 100%; */
+    justify-content: flex-end ;
+    align-items: center;
+    transition: 1s ease;
+}
+.nav ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 0 24px;
+}
+
+.service{
+    position: relative;
+}
+.service>a{
+    display: flex;
+    align-items: center;
+}
+.service:hover .serviceDropDown{
+    max-height: 300px;
+}
+.serviceDropDown{
+    position: absolute;
+    background-color: white;
+    left: -50%;
+    color:  black;
+    width: 200%;
+    /* padding: 8px 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    max-height: 0;
+    overflow: hidden;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.10);
+    transition: all 1s ease;
+}
+.serviceDropDown li{
+    text-align: left;
+    margin: 10px 24px 10px 24px !important;
+}
+
+@media only screen and (max-width: 1020px){
+    .nav ul li{
+        margin: 0 12px;
+    }    
+}
+@media only screen and (max-width: 768px){
+    .nav{
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        font-size: 1.4rem;
+        position: absolute;
+    }
+    .nav ul{
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100vh;
+        /* width: 75%; */
+        padding-top: 3rem;
+        background-color: #191919;
+        color: #507C92;
+    }
+    .show{
+        width: 70%;
+    }
+    .show li:first-of-type{
+        padding: 20px 30px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .show li{
+        border-bottom: 1px solid #507C92;
+        width: 100%;
+        padding: 10px;
+    }
+    .hide{
+        width: 0%;
+    }
+    .hide li{
+        display: none;
+    }
+}
