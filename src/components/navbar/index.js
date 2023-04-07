@@ -21,48 +21,48 @@ export const Navbar = () => {
             <span></span>
             <span><Image src={logo1}/></span>
         </Link>
-        {width <= 768 ? <Link onClick={() => setShowNav(prevStat => !prevStat)} className="nav-item" href="#">
+        {width <= 768 ? <div style={{cursor: "pointer"}} onClick={() => setShowNav(prevStat => !prevStat)} className="nav-item" >
                     <GiHamburgerMenu />
-                </Link> : null}
+                </div> : null}
         <ul className={showNav ? styles.show : styles.hide}>
             {width <= 768 ? <li onClick={() => setShowNav(prevStat => !prevStat)} className="nav-item">
-                <Link href="#">
+                <div style={{cursor: "pointer"}}>
                     <ImCross />
-                </Link>
+                </div>
             </li> : null}
             <li className="nav-item">
-                <Link href="/">
+                <Link href="/" onClick={() => {setShowNav(false)}}>
                     Home
                 </Link>
             </li>
             <li className="nav-item">
-                <Link href="/about">
+                <Link href="/about" onClick={() => {setShowNav(false)}}>
                     About
                 </Link>
             </li>
             <li className={styles.service} onClick={()=>setExpandService(prev => !prev)} style={expandService && width <= 768 ? {height: "228px"} : {}}>
-                <Link href="#">
+                <div style={{cursor: "pointer"}}>
                     <span>Services</span>
                     <RiArrowDropDownLine size={40}/>
-                </Link>
+                </div>
                 <ul className={styles.serviceDropDown}>
                     <li>
-                        <Link href="/services/logo-design">
+                        <Link href="/services/logo-design" onClick={() => {setShowNav(false)}}>
                             Logo Design
                         </Link>
                     </li>
                     <li>
-                        <Link href="/services/web-design">
+                        <Link href="/services/web-design" onClick={() => {setShowNav(false)}}>
                             Web Design
                         </Link>
                     </li>
                     <li>
-                        <Link href="/services/animation">
+                        <Link href="/services/animation" onClick={() => {setShowNav(false)}}>
                             2D & 3D Animations
                         </Link>
                     </li>
                     <li>
-                        <Link href="/services/digital-marketing">
+                        <Link href="/services/digital-marketing" onClick={() => {setShowNav(false)}}>
                             Digital Marketing
                         </Link>
                     </li>
@@ -79,12 +79,12 @@ export const Navbar = () => {
                 </Link>
             </li> */}
             <li className="nav-item">
-                <Link href="/contact-us">
+                <Link href="/contact-us" onClick={() => {setShowNav(false)}}>
                     contact us
                 </Link>
             </li>
             <li className="nav-item">
-                <Link href="/free-qoute">
+                <Link href="/free-qoute" onClick={() => {setShowNav(false)}}>
                     free qoute
                 </Link>
             </li>

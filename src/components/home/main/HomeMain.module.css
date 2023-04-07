@@ -46,6 +46,12 @@
 }
 .topContainerRight > div{
     width: 50%;
+    transition: all 0.4s ease;
+    
+}
+.topContainerRight > div:hover{
+    transform: scale(1.1);
+    /* box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.10); */
 }
 .topContainerRight > div > h3{
     font-size: 1.6rem;

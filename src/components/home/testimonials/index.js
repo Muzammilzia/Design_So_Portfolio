@@ -14,55 +14,18 @@ import icon3 from '../../../assetts/home-testimonial-icon3.png'
 import icon4 from '../../../assetts/home-testimonial-icon4.png'
 import icon5 from '../../../assetts/home-testimonial-icon5.png'
 import icon6 from '../../../assetts/home-testimonial-icon6.png'
+import { Card } from './Card';
 
 export const Testimonials = () => {
   return (
     <div className={styles.container}>
         <div className={styles.topContainer}>
-            <h1>Reinventing new business ideas and markets via web</h1>
+            <h1 className='reveal'>Reinventing new business ideas and markets via web</h1>
             <div className={styles.flexedContainer}>
-                <div>
-                    <Image src={icon1}/>
-                    <div>
-                        <h3>Digital Marketing</h3>
-                        <p>Improve your digital visibility with strategic and ground-breaking digital marketing services!</p>
-                    </div>
-                </div>
-                <div>
-                    <Image src={icon1}/>
-                    <div>
-                        <h3>Digital Marketing</h3>
-                        <p>Improve your digital visibility with strategic and ground-breaking digital marketing services!</p>
-                    </div>
-                </div>
-                <div>
-                    <Image src={icon1}/>
-                    <div>
-                        <h3>Digital Marketing</h3>
-                        <p>Improve your digital visibility with strategic and ground-breaking digital marketing services!</p>
-                    </div>
-                </div>
-                <div>
-                    <Image src={icon1}/>
-                    <div>
-                        <h3>Digital Marketing</h3>
-                        <p>Improve your digital visibility with strategic and ground-breaking digital marketing services!</p>
-                    </div>
-                </div>
-                <div>
-                    <Image src={icon1}/>
-                    <div>
-                        <h3>Digital Marketing</h3>
-                        <p>Improve your digital visibility with strategic and ground-breaking digital marketing services!</p>
-                    </div>
-                </div>
-                <div>
-                    <Image src={icon1}/>
-                    <div>
-                        <h3>Digital Marketing</h3>
-                        <p>Improve your digital visibility with strategic and ground-breaking digital marketing services!</p>
-                    </div>
-                </div>
+                <Card icon={icon1} title='Digital Marketing' para='Improve your digital visibility with strategic and ground-breaking digital marketing services!'/>
+                <Card icon={icon3} title='Logo Design' para='Personalized logo designed for your business!'/>
+                <Card icon={icon4} title='Animation & Motion Graphics' para='Make you brand print in the mind of your audience with attractive motion graphics animation'/>
+                <Card icon={icon5} title='Web Design & Development' para='User-Friendly website development services to Upscale Your Growth!'/>
             </div>
         </div>
         {/* <div className={styles.bottomContainer}>

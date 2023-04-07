@@ -9,6 +9,11 @@
     justify-content: space-between;
     align-items: center;
 }
+.addressContainer{
+    /* background-color: white;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
+    padding: 60px; */
+}
 
 .addressContainer > h1::after{
     content: ' ';
